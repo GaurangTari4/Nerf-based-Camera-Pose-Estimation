@@ -1,7 +1,7 @@
-
 # Nerf-based Camera Pose Estimation
 
 Welcome to the Nerf-based Camera Pose Estimation repository! This repository is dedicated to providing tools and implementations related to camera pose estimation using Neural Radiance Fields (NeRF).
+
 
 ## Repository Contents
 
@@ -13,4 +13,5 @@ Welcome to the Nerf-based Camera Pose Estimation repository! This repository is 
   - Hierarchical Sampling
   - Stratified Sampling
   - Tone Mapping
+
 
