@@ -7,9 +7,9 @@ Welcome to the Nerf-based Camera Pose Estimation repository! This repository is 
 
 - **camera.py**: This script is designed to extract camera intrinsic parameters and save them in an `.npz` format.
 
-- **tiny_nerf.py**: Contains the Tiny NeRF implementation integrated with a pose estimation pipeline.
+- **tiny_nerf.ipynb**: Contains the Tiny NeRF implementation integrated with a pose estimation pipeline.
 
-- **modified_nerf.py**: An enhanced version of the Tiny NeRF implementation. This script introduces:
+- **modified_nerf.ipynb**: An enhanced version of the Tiny NeRF implementation. This script introduces:
   - Hierarchical Sampling
   - Stratified Sampling
   - Tone Mapping
