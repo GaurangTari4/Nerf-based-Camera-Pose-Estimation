@@ -41,3 +41,25 @@ ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(obj_points, img_points, gray.
 
 # Save all the parameters
 np.savez('calibration_results.npz', ret=ret, mtx=mtx, dist=dist, rvecs=rvecs, tvecs=tvecs)
+import cv2
+import numpy as np
+
+# Load the calibration parameters
+with np.load('calibration_results.npz') as X:
+    mtx, dist = [X[i] for i in ('mtx','dist')]
+
+# Open the image to be undistorted
+img = cv2.imread('img0.png')
+
+# Undistort the image
+undistorted_img = cv2.undistort(img, mtx, dist, None, mtx)
+cv2.imwrite('original_img.png', img)
+cv2.imwrite('undistorted_img.png', undistorted_img)
+# Display the original and undistorted images for comparison
+cv2.imshow('Original', img)
+cv2.imshow('Undistorted', undistorted_img)
+diff_img = cv2.absdiff(img, undistorted_img)
+cv2.imwrite('difference_img.png', diff_img)
+cv2.imshow('Difference', diff_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
