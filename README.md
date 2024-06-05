@@ -9,7 +9,7 @@ Welcome to the Nerf-based Camera Pose Estimation repository! This repository is 
 
 - **pose estimation with nerf.ipynb**: Contains the NeRF implementation integrated with a pose estimation pipeline.
 
-- **modified_nerf.ipynb**: An enhanced version of the Tiny NeRF implementation. This script introduces:
+- **new_nerf.ipynb**: An enhanced version of the Tiny NeRF implementation. This script introduces:
   - Hierarchical Sampling
   - Stratified Sampling
   - Tone Mapping
